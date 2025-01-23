@@ -1,0 +1,49 @@
+Thursday, 23 January 2025
+-------------------------
+
+CHAPTER 4 - Analog & PWM
+------------------------
+
+Related Knowledge:
+- An analog signal is a continuous signal in both time and value.
+- A digital signal or discrete-time signal is a time series consisting of a seuence of uantities.
+- Most signals are analog signals. Example: The temperature changes throughout the day, and does not suddenly change from 0 to 0 degrees Celsius in an instant. Digital signals can change instantaneously.
+- Both analog and digital signals can be converted into the other.
+
+PWM:
+- Pulse-Width Modulation.
+- Very effective method for using digital signals to control analog circuits.
+- Common processors cannot directly output analog signals.
+- PWM technology makes it very convenient to achieve this conversion (digital to analog).
+
+    How does it work?
+    PWM uses digital pins to send certain frequencies of square waves, which alternately last for a time. The total time for each set of high levels and low levels is generally fixed, this is called the period.
+    
+    The time of high level outputs are generally called "pulse width", and the duty cycle is the percentage of the ratio of the pulse duration, or pulse width (PW) to the total period (T) of the waveform.
+
+    The longer the outputs of the high levels last, the longer the duty cycle and the higher the corresponding volate in the analog signal will be.
+
+    The longer the PWM duty cycle is, the higher the output power will be. We can use the PWM to control the brightness of an LED or the speed of a DC motor, etc.
+
+    *PWM is not real analog, and the effective value of the voltage is equivalent to the corresponding analog. Therefore we can control the output power of the LED and other output modules to achieve different effects.
+
+
+ESP32 and PWM:
+- LEDC(PWM) controller has 16 separate channels, each of which can independently control fequency, duty cycle, and even accuracy.
+- PWM output pins of ESP32 are configurable, with one or more PWM output pins per channel.
+
+The relationship between the maximum frequency and bit precision is:
+
+        Freqmax = 80 000 000 / 1 << bit
+
+    Where the maximum value of bit is 31.
+
+        Generate a PWM with an 8-bit precision (2exp8=256, values from 0 to 255) with a maximum frequency of:
+            80 000 000/256 = 312 500Hz
+    
+Reference for LED Control:
+https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html
+
+- ledcAttachChannel()
+
+    This function is used tot setup LEDC pin with given frequency, resolution, and channel. Attaching multiple pins to the same channel will make them share the same duty cycle. Given frequency, resolution will be ignored if channel is already configured.

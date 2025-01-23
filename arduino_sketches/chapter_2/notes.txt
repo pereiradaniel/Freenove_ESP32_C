@@ -1,0 +1,28 @@
+Thursday 23, January 2025
+-------------------------
+- ESP32-WROVER needs 5v power supply.
+
+Three essential parts in a complete automatic control device:
+    1. INPUT
+        - Switches, sensors, etc.
+     
+    2. CONTROL
+        - ESP32, RPI, Arduino, MCU, etc.
+
+    3. OUTPUT
+        - LED, buzzer, motor, etc.
+
+
+PUSH BUTTON
+-----------
+- Push button has 4 pins (2 pole switch).
+- Two pins on the LEFt are connected, and both left and right sides are the same.
+
+        1 /--------\ 2
+          |    /   |
+          |---/  --|
+          |        |
+        1 \--------/ 2
+    
+    When the button on the switch is pressed, the circuit is completed.
+

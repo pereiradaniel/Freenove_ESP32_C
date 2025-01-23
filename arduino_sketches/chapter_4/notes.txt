@@ -44,6 +44,12 @@ The relationship between the maximum frequency and bit precision is:
 Reference for LED Control:
 https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html
 
-- ledcAttachChannel()
+- ledcAttachChannel(uint8_t pin, uint32_t fre, uint8_t resolution, uint8_t channel)
+
+        pin:            The pin of PWM.
+        freq:           Frequency value of PWM.
+        resolution:     PWM precision control bit.
+        channel:        Channel index (value range 0-5).
 
     This function is used tot setup LEDC pin with given frequency, resolution, and channel. Attaching multiple pins to the same channel will make them share the same duty cycle. Given frequency, resolution will be ignored if channel is already configured.
+

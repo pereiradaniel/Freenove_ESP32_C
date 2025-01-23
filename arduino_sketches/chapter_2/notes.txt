@@ -1,5 +1,8 @@
 Thursday 23, January 2025
 -------------------------
+
+PROJECT 2.1 - BUTTON AND LED
+----------------------------
 - ESP32-WROVER needs 5v power supply.
 
 Three essential parts in a complete automatic control device:
@@ -25,4 +28,12 @@ PUSH BUTTON
         1 \--------/ 2
     
     When the button on the switch is pressed, the circuit is completed.
+
+
+PROJECT 2.2 - Mini Table Lamp
+-----------------------------
+This will function differently from project 2.1, pressing the button once will turn the LED on, and again will turn it off.
+
+Debounce for Push button:
+The moment a push button switch is pressed, it does not change from one state to another state. Due to tiny mechanical vibrations, there will be a short period of continuous buffeting before it complete reaches another state, too fast for humans to detect but not the microcontroller. The same for when the button is released. This phenomenon is known as "bounce".
 

@@ -1,0 +1,9 @@
+Thursday 23, January 2025
+-------------------------
+
+CHAPTER 3 - LED BAR
+-------------------
+LED Bar:
+    - Has 0 LEDs integrated into one compact component.
+    - Two rows of pins at its bottom paired to identify each LED.
+

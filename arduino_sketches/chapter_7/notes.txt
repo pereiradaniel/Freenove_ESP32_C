@@ -43,4 +43,8 @@ Transistor
     Using PNP:
         - If GPIO output is low, current will flow through R, transistor will be conducted, buzzer will sound.
         - If GPIO output is high, no current flows through R, transistor is not conducted, no buzzer sound.
-    
+
+Passive vs Active
+The code is the same, except the passive requires a PWM for the desired frequency to be supplied. This is achieved using ledcAttachChannel().
+
+ledcWriteTone() can be use to generate a square wave with variable frequency and duty cycle fixed to 50%.

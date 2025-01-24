@@ -1,0 +1,46 @@
+Friday, 24 January 2025
+=======================
+
+CHAPTER 7 - BUZZER
+------------------
+
+-=[ Project 7.1 Doorbell ]=-
+
+Component Knowledge
+-------------------
+
+Buzzer
+    - Sounding component widely used in electronic devices.
+    - Two types:
+        1. Active
+            - Has oscillator inside.
+            - Will sound as long as it is supplied with power.
+        2. Passive
+            - Requires external oscillator signal (generally PWM) to make sound.
+    
+    - Active buzzers are easy to use, and generally only make a specific frequency of sound.
+    - Passive buzzer requires an external circuit to make a sound, but it can be controlled to make a sound with different frequency.
+    - Resonant frequency of the passive buzzer is 2kHz.
+
+Transistor
+    - Device that controls current.
+    - Used to amplify weak signal, or works as a switch.
+    - Has three electrodes: base (b), collector (c), and emitter (e).
+
+    When there  is current passing between "be", "ce" will allow several-fold current (transistor magnification).
+
+    When the current between "be" exceeds a certain value, "ce" will not allow current to increase.
+
+    There are two types of transistor: PNP and NPN.
+
+    - Transistors are often used as a switch in digital circuits.
+    - Micro-controllers have low capacity to output current, a transistor may be used to amplify current.
+
+    Using NPN:
+        - If GPIO output is high, current will flow through R1, transistor will be conducted, buzzer will sound.
+        - If GPIO output is low, not current flows through R1, transistor is not conducted, no buzzer sound.
+    
+    Using PNP:
+        - If GPIO output is low, current will flow through R, transistor will be conducted, buzzer will sound.
+        - If GPIO output is high, no current flows through R, transistor is not conducted, no buzzer sound.
+    

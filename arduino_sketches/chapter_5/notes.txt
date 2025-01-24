@@ -18,3 +18,20 @@ Related Knowledge
 
     Using three 8-bit PWMs to control RGB LED:
         - In theory, 2^8*2^8*2^8=16777216 (16 million) colours can be created.
+
+Bytes in Arduino Sketches:
+    - Used to represent an 8-bit unsigned integer, capable of holding a value from 0 to 255.
+    - Preferred in several scenarios:
+        1. Memory Efficiency: Usin byte instead of larger data types like int (16 bits) can save memory.
+        2. Clarity and consistency: Recommended over unsigned char for clarity and consistency in Arduino programming style. Makes code more readable and easier to understand.
+        3. Suitability for PIN numbers and small values: Since pin nunmbers and many small integer values in Arduino projects fall within the range of 0 to 255, byte is more appropriate.
+
+https://docs.arduino.cc/language-reference/en/variables/data-types/byte/
+
+byte()
+ - Converts a value into the byte data type.
+    Syntax
+    - byte(x)
+    - (byte)x   // C-style type conversion
+    Returns
+    - Data type: byte.

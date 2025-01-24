@@ -35,3 +35,15 @@ byte()
     - (byte)x   // C-style type conversion
     Returns
     - Data type: byte.
+
+LED Control (LEDC)
+------------------
+Primarily designed to control the intensity of LEDs.
+
+ledcAttachChannel()
+
+    Source:
+    https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/ledc.html#ledcattachchannel
+
+    Description:
+    This function is used to setup LEDC pin with given frequency, resolution, and channel.

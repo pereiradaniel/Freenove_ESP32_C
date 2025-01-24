@@ -10,7 +10,7 @@ CHAPTER 5 - RGB LED
 Related Knowledge
     - RGB LED has 3 LEDs that can respectively emit red, green, blue.
     - 4 pins.
-        Pin #1: The common port, either pos or neg.
+        Pin #1 (long pin): The common port, either pos or neg.
         Pin #2: Red.
         Pin #3: Green.
         Pin #4: Blue.

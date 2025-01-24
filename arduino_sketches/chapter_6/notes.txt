@@ -32,3 +32,10 @@ SYMBOL              FUNCTION
 SKETCH
 ------
 - Uses a library named: Freenove_WS2812_Lib_for_ESP32".
+
+
+-=[ Project 6.2 ]=-
+
+RAINBOW LIGHT
+-------------
+

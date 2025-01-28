@@ -1,0 +1,63 @@
+# CHAPTER 9: AD/DA Converter
+
+- PWM is not real analog.
+- This project will read analog, convert it to digital, and convert the digital into analog output: ADC and DAC.
+
+
+# Project 9.1: Read the Voltage of the Potentiometer
+
+- Use the ADC function of ESP32 to read the voltage value of a potentiometer.
+- Output the voltage value through the DAC to control the brightness of an LED.
+
+
+# ADC
+
+An electronic integrated circuit used to convert analog signals, such as voltages, to digital or binary.
+
+The range of the ADC on ESP32 is 2 bits. It has a resolution of 2^12=4096. This represents a range at 3.34v that will be divided equally into 4096 parts.
+
+
+# DAC
+
+An electronic integrated circuit used to covert digital signals int analog.
+
+The ESP32 has two DAC output pins with 8-bit accuracy:
+    - GPIO 25
+    - GPIO 26
+
+Divides VDD at 3.3v into 2*8=256  parts.
+
+Example:
+When digital quantity is 1, output voltage is:
+    3.3 / 256 * 1 V
+
+When digital quantity is 128, output voltage is:
+    3.3 / 256 * 128 = 11.65 V
+
+
+# ADC on ESP32
+
+- ESP32 has two digital analog converters, with successive approximations of 12-bit accuracy.
+- A total of 16 pins can be used to measure analog signals.
+
+
+# DAC on ESP32
+
+- ESP32 has two 8-bit digital analog converters to be connected to GPIO25 and GPIO26.
+
+
+# Component Knowledge
+
+Potentiometer:
+    - Three-terminal resistor.
+    - Resistance value is not fixed, can be adjusted.
+
+
+# Sketch
+
+- The serial monitor prints ADC values, DAC values, and the output voltage of the potentiometer.
+- The code makes the output voltage from the DAC pin equal to the voltage input from the ADC pin.
+
+Rotate the handle of the potentiometer:
+    1. The printout in the serial monitor will change.
+    2. A voltage greater than 1.6 is needed to turn on the LED, and this is the key difference between PWM and DAC.

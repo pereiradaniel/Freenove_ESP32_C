@@ -1,0 +1,18 @@
+Serial Communication
+--------------------
+
+UART: Universal Asynchronous Receiver/Transmitter
+
+    - Commonly used in electronic circuit communication.
+    - Two communication lines:
+
+        1.  Responsible for sending data (TX).
+        2.  Responsible for receiving data (RX).
+
+    * Baud rate of both sides must be the same in order for communication between devices can work.
+
+
+Serial Port on ESP32
+--------------------
+
+    - ESP32 has integrated USB to serial transfer, allowing it to communicate with the computer with a USB cable.

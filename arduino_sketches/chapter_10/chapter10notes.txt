@@ -1,0 +1,8 @@
+# CHAPTER 10: TOUCH SENSOR
+
+- ESP32 offers up to 10 capacitive touch GPIO.
+- Mechanical switches are prone to jitter that must be eliminated when used, BUT this is not the case with ESP32's built-in touch sensor.
+
+
+# Project 10.1: Read the Touch Sensor
+

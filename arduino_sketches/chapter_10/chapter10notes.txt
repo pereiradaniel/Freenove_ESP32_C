@@ -45,3 +45,9 @@ A16                     GPIO 14*        ADC2_CH6
 A17                     GPIO 27*        ADC2_CH7
 A18                     GPIO 25         ADC2_CH8
 A19                     GPIO 26         ADC2_CH9
+
+
+# Project 10.2: Touch Lamp
+
+Use the ESP32's touch sensor to create a touch switch lamp.
+

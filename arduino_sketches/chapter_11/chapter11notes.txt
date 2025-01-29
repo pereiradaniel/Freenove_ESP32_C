@@ -1,0 +1,14 @@
+# CHAPTER 11: Potentiometer & LED
+
+Review of knowledge:
+- DAC output can drive an LED at varying voltage.
+- The LED has a threshold voltage required for it to turn on.
+- Another, more efficient method of LED brightness control is through use of a potentiometer.
+
+
+# Project 11.1: Soft Light
+
+Objective: Use and ADC module to read ADC values of a potentiometer, and map it to duty cycle of the PWM used to control the brightness of an LED.
+
+Result: The brightness of an LED will be adjusted by a potentiometer.
+

@@ -12,3 +12,10 @@ Objective: Use and ADC module to read ADC values of a potentiometer, and map it 
 
 Result: The brightness of an LED will be adjusted by a potentiometer.
 
+
+# Project 11.2: Soft Colourful Light
+
+Objective: Use 3 Potentiometers to control an RGB LED using the same principle as Project 11.1.
+
+Result: The brightness of the three RGB LEDs will be controlled using 3 potentiometers.
+

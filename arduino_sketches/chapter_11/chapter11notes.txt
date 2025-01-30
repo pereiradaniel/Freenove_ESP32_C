@@ -23,3 +23,5 @@ Result: The brightness of the three RGB LEDs will be controlled using 3 potentio
 # Project 1.3: Soft Rainbow Light
 
 Objective: Use the potentiometer to control the 8 RGB LED module.
+
+Result: A colour wheel will be displayed on the * RGB LED module, which can be rotated by turning the potentiometer.

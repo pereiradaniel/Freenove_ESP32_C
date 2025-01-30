@@ -19,3 +19,7 @@ Objective: Use 3 Potentiometers to control an RGB LED using the same principle a
 
 Result: The brightness of the three RGB LEDs will be controlled using 3 potentiometers.
 
+
+# Project 1.3: Soft Rainbow Light
+
+Objective: Use the potentiometer to control the 8 RGB LED module.

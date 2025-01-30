@@ -1,0 +1,29 @@
+# CHAPTER 15: 74HC595 & LED Bar Graph
+
+Objective: Control an LED bar using 74HC595 in order to conserve GPIO ports.
+
+74HC595
+    - Chip used to convert serial data into parallel data.
+    - Can convert the serial data of one byte into 8 bits, and send its corresponding level to each of the 8 ports.
+    - Can be used to expand the IO ports of an ESP32.
+    - At least 3 ports are required to control the 8 ports of the 74HC595 chip.
+
+The 74HC595 Shift Register:
+---------------------------
+    - Controls eight different output pins with only three input pins.
+    - If you need more than 8 I/O pins you can daisy chain as many shift registers as necessary.
+    - Uses technique known as bit-shifting.
+
+How does it work?
+-----------------
+    - Has two 8-bit registers.
+        1. Shift register
+        2. Storage/Latch register
+    
+    Every time the 75HC595 receives a clock pulse, two things occur:
+
+        1. Bits contained in the shift register are shifted to the left by one position.
+        2. Bit 0 in the shift register accepts the current value on the DATA pin. On the rising edge of the clock pulse, if the data pin is HIGH, 1 is pushed into the shift register, otherwise 0.
+
+source: https://lastminuteengineers.com/74hc595-shift-register-arduino-tutorial/
+

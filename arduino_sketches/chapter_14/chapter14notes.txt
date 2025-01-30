@@ -1,0 +1,15 @@
+# CHAPTER 14: Joystick
+
+# Project 14.1: Joystick
+
+Joystick:
+    - Type of input sensor.
+    - Receives input on two axes at the same time: x and y
+    - Third direction capability by pressing down: z axis
+    - General structure:
+        Two rotary potentiometers are at 90 degrees to each other.
+        A push button in the z axis detects when the user presses down.
+    
+    - When the thumbstick data is read, there are some differences between the axes:
+    - The data of x and y are analog, which requires the use of ADC.
+    - The data of the z axis is digital, so it can be directly read with GPIO, but there is the option to use ADC for this.

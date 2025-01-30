@@ -1,0 +1,16 @@
+# CHAPTER 12: Photoresistor & LED.
+
+# Project 12.1: Night Lamp.
+
+- Photoresistors are sensitive the the amount of light present.
+- Using a photoresistor, an LED can be adjusted to become dimmer when ambient light is bright, and brighter when ambient light is dim.
+
+Photoresistor:
+    - A light sensitive resistor.
+    - Active component.
+    - Has light sensitive surface.
+    - Decreases resistance with luminosity.
+    - Resistance value changes in proportion to the ambient light detected.
+    
+    Circuit for detecting change of a photoresistor's resistance value includes a 10k resistor. The diffference between the photoresistor and R1 will tell us the intensity of the light.
+

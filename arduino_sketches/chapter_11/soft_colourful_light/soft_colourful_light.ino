@@ -1,3 +1,4 @@
+// PROJECT 11.2
 // Define LED pins for RGB light:
 const byte ledPins[] = {15, 2, 4};
 

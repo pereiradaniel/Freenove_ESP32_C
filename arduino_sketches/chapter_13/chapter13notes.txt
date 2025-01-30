@@ -1,0 +1,32 @@
+# CHAPTER 13: Thermistor
+
+Thermistor
+----------
+    - Type of resistor:
+        Temperature sensitive resistor.
+
+    - Resistance value is dependent on:
+        a. temperature
+        b. changes in temperature
+
+    - Can be used to create a thermometer.
+
+Rt = R * EXP[ B * (1/T2 - 1/T1)]
+
+Where:
+    Rt      is the thermistor under T2 temperature.
+    R       is the nominal resistance of thermistor under T11 temperature.
+    EXP[n]  is nth power of E
+    B       is for thermal index.
+    T1, T2  is Kelvin temperature (absolute temperature).
+            Kelvin temperature = 273.115 + Celsius temperature
+            For the parameters of the thermistorm use:
+                B=3950
+                R=10k
+                T1=25
+
+The value measured by the ADC converter can be used to obtain the resistance value of the thermistor.
+
+The temperature formula:
+
+    T2 = 1 / ( 1/T1 + ln ( RT / R ) / B )

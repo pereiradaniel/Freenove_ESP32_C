@@ -32,3 +32,12 @@ F 1 0 0 0 1 1 1 0 0x8e 1000 1110
 
 # Project 16.2: 4-Digit 7-Segment Display
 
+4 Digit 7 Segment display
+-------------------------
+    - Integrates four 7 segment display modules into one module.
+    - All of the LEDs contained havea a common anoed and individual cathodes.
+
+    Display method:
+        - Similar to 7 segment display, except each digit is shown in turn.
+    
+    

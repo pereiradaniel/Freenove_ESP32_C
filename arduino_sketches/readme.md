@@ -1,3 +1,3 @@
 # Freenove ESP32 Arduino Sketches and Study Notes
 
-Daniel Pereira 2025
+Daniele Pereira 2025

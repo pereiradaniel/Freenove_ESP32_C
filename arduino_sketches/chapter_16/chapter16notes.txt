@@ -39,5 +39,28 @@ F 1 0 0 0 1 1 1 0 0x8e 1000 1110
 
     Display method:
         - Similar to 7 segment display, except each digit is shown in turn.
+
+
+# Project 16.3: 74HC595 & LED Matrix
+
+Objective: Use two 74HC595 IC chips to control a monochrome 8x8 LED matrix to display both simple graphics and characters.
+
+LED Matrix
+----------
+    - Rectangular display module that consists of a uniform grid of LEDs.
     
+    Two types of arrangements:
+
+        1. Common Anode
+            - Positive poles of the LEDs in each row and negative poles of LEDs in each column are connected together.
+    
+        2. Common Cathode
+        - Negative poles of the LEDs in each row and positive poles of LEDs in each column are connected together.
+    
+
+# How the 8x8 LED matrix with common anode works:
+    - Choose 16 ports on the ESP32 board to connect to the 16 ports of LED matrix.
+    - Configure one port in columns for low level. This is now the selected port.
+    - Then configure the eight port in the row to display content in the selected column.
+    - Add a delay value and then select the next column that outputs the corresponding content. (Scanning).
     

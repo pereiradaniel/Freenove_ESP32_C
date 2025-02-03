@@ -1,0 +1,56 @@
+# CHAPTER 17: Relay & Motor
+
+# Project 17.1: Relay & Motor
+
+Relay
+-----
+    - A safe switch which can use a low power circuit to control a high power circuit.
+    
+    Consists of:
+        1. Electromagnet
+            Controlled by low power circuit.
+        2. Contacts
+            Used in high power circuit.
+    
+    How it works:
+        When the electromagnet is energized, it will attract the contacts.
+    
+Inductor
+--------
+    Symbol of inductance:   L
+    Unit of inductance:     Henry (H)
+    Example:                1H=1000mH, 1mH=1000uH.
+
+An inductor is:
+    - An energy storage device.
+
+What it does:
+    - Covnerts electrical energy into magnetic energy.
+
+It consists of:
+    1. Winding coil with some inductance.
+
+How it works:
+ - Hinders the change of current passing through it.
+ - When the current increases, it will attempt to hinder the increasing trend of current.
+ - When the current decreases, it will attempt to hinder the decreasing trend of the current.
+ - The current passing through the inductor is not transient.
+
+The coil of relays can be equivalent to that of inductors, when the transistor disconnects the power supply of the relay, the current in the coil of the relay cannot stop immediately and causes an impact on power supply.
+
+A parellel diode will get connected to both ends of the relay coil pin in the reversing direction. The current then passes through the diode, avoiding any impact on the power supply.
+
+Motor
+-----
+    - A device that converts electrical energy into mechanical energy.
+
+    Consists of:
+        1. Rotor
+        2. Stator
+    
+    When the motor works, the stationary part is the stator, and the rotating part is the rotor.
+
+    How it works:
+    The motor has two contacts for power, negative and positive.
+    When the motor is connected to the power supply, the rotor rotates in one direction. When the polarity is reversed, the rotor rotates in the other direction.
+

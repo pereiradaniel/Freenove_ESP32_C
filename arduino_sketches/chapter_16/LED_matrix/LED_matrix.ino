@@ -8,6 +8,14 @@ int dataPin = 15;          // Pin connected to DS of 74HC595（Pin14）
 const int smilingFace[] = {                       //"^ⅴ^"
   0x1C, 0x22, 0x51, 0x45, 0x45, 0x51, 0x22, 0x1C
 };
+
+const int crosses[] = {
+  0x18, 0x18, 0x18, 0xff, 0xff, 0x18, 0x18, 0x18,
+  0x3c, 0x18, 0x99, 0xff, 0xff, 0x99, 0x18, 0x3c,
+  0xff, 0xdb, 0x99, 0xff, 0xff, 0x99, 0xdb, 0xff,
+  0xff, 0x99, 0x99, 0xff, 0xff, 0x99, 0x99, 0xff
+};
+
 // Define the data of numbers and letters, and save them in flash area
 const int data[] PROGMEM = {
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // " "
@@ -39,17 +47,19 @@ void setup() {
 void loop() {
   // Define a one-byte variable (8 bits) which is used to represent the selected state of 8 column.
   int cols;
+  
   // Display the static smiling pattern
   for (int j = 0; j < 500; j++ ) {  // repeat 500 times
     cols = 0x01;
     for (int i = 0; i < 8; i++) {   // display 8 column data by scaning
-      matrixRowsVal(smilingFace[i]);// display the data in this column
+      matrixRowsVal(crosses[i]);// display the data in this column
       matrixColsVal(~cols);          // select this column
       delay(1);                     // display them for a period of time
       matrixRowsVal(0x00);          // clear the data of this column
       cols <<= 1;                   // shift"cols" 1 bit left to select the next column
     }
   }
+  
   // Display the dynamic patterns of numbers and letters
   for (int i = 0; i < 128; i++) { 
     for (int k = 0; k < 10; k++) {      // repeat image of each frame 10 times.

@@ -54,3 +54,41 @@ Motor
     The motor has two contacts for power, negative and positive.
     When the motor is connected to the power supply, the rotor rotates in one direction. When the polarity is reversed, the rotor rotates in the other direction.
 
+# Project 17.2: Motor & Driver
+
+L293D
+-----
+    An IC chip with a 4-channel motor drive.
+    
+    It can drive:
+        - a unnidirectional DC motor with 4 ports
+        - a bi-directional DC motor with 2 ports
+        - a stepper motor
+
+Features:
+ - Can be used to run two DC motors with the same IC.
+ - Control of speed and direction is possible.
+ - Motor voltage Vcc2 (Vs): 4.5v to 36V.
+ - Max peak motor current: 1.2A
+ - Max continuous motor current: 500mA
+ - Supply Voltage to Vcc1(vss): 4.5V to 7V.
+ - Transition time: 300ns (at 5V and 24V)
+ - Automatic thermal shutdown is available.
+ - Available in 16-pin DIP, TSSOP, SOIC packages.
+  
+  source: https://components101.com/ics/l293d-pinout-features-datasheet
+
+Usage:
+    There are two connection options.
+    
+    1. One channel:
+    Using one channel only allows the motor to rotate in one direction.
+
+    2. Two channels:
+    One channel outputs the PWM, the other connects to GND. This allows you to control the speed of the motor.
+
+    In Practical usage, the motor is usually connected to channel 1 and 2 by outputting different levels to in1 and in2 to control the rotational direction of the motor, and output the PWM wave to enable1 port to control the motor's rotational speed.
+
+    If the motor is connected to channel 3 and 4 by outputting different levels to in3 and in4 to control the motor's rotation direction, and output to the PWM wave to enable2 pin to control the motor's rotational speed.
+
+    

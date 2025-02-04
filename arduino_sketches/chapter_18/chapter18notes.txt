@@ -39,3 +39,6 @@ Links:
 https://madhephaestus.github.io/ESP32Servo/classServo.html
 https://madhephaestus.github.io/ESP32Servo/classServo.html#a613aa8f5aa81971357e6ff36df92309d
 https://madhephaestus.github.io/ESP32Servo/classServo.html#aecebda2e2ee0e43824edec5e7708b566
+
+
+# Project 18.2: Servo Knop

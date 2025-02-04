@@ -91,4 +91,16 @@ Usage:
 
     If the motor is connected to channel 3 and 4 by outputting different levels to in3 and in4 to control the motor's rotation direction, and output to the PWM wave to enable2 pin to control the motor's rotational speed.
 
+Potentiometer values, speed and direction of motor:
+
+    Direction of the motor:
+    The ADC of the ESP32 has a 12-bit accuracy.
+    This corresponds to a range from 0 to 4095.
+    Therefore, set the mid-range point to a value of 2048.
+
+        If the value of ADC is less than 2048, the motor should rotate in one direction.
+
+        If the value of ADC is greater than 2048, the motor should rotate in the other direction.
     
+    Speed of the motor:
+    Subtract 2048 from the ADC value and take the absolute value and use this result as the speed of the motor.

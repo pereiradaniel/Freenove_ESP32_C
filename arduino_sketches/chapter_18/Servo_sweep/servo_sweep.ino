@@ -13,7 +13,10 @@ void setup() {
     myservo.setPeriodHertz(50);
   
     // Attach pin to the Servo object:
-    // myservo.attach(): arguments for motor pin and time range
+    // myservo.attach():
+    //      pin: Port connected to servo signal line.
+    //      low: Time of high level corresponding to 0 degrees.
+    //      high: Time of high level corresponding to 180 degrees.
     myservo.attach(servoPin, 500, 2500);
 }
 

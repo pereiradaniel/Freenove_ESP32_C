@@ -2,3 +2,27 @@
 
 # Project 19.1: Stepper Motor
 
+Stepper Motor:
+--------------
+    What it is:
+        An open-loop control device.
+    
+    How it works:
+        Converts an electronic pulse signal into angular or linear displacement.
+
+        Non-overload condition:
+        Speed of the motor and the location of the stops depends only on the pulse signal frequency and number of pulses and is not affected by change sin laod as with a DC motor.
+    
+        Stator:     Outside casing.
+        Rotor:      Inside the casing.
+
+        When the stator is powered ON, an electromagnetic field will be formed tp attract a corresponding convex diagonal groove or indentation in the rotor's surface.
+
+    Number of rotation steps: Controls the stepper motor angle.
+    Time between two steps: Controls the stepper motor rotation speed.
+
+ULN2003 Stepper Motor Driver:
+-----------------------------
+    What it does:
+        Used to convert weak signals into more powerful control signals in order to drive the stepper motor.
+    

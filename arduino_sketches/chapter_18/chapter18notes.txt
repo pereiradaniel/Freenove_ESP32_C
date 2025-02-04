@@ -13,10 +13,10 @@ Servo:
         - Used to control motion in model cars and airplanes, robots, etc.
     
     3 pins:
-        #1 Signal.
+        #1 (ORANGE)     Signal.
         Power:
-        #2 positive VCC
-        #3 negative GND
+        #2 (RED)        positive VCC
+        #3 (BLACK)      negative GND
     
 
 # Determining the angle of the servo arm
@@ -34,3 +34,8 @@ Servo:
 
 Required Libraries:
     In order to use the servo, you will need to install the ESP32Servo library!
+
+Links:
+https://madhephaestus.github.io/ESP32Servo/classServo.html
+https://madhephaestus.github.io/ESP32Servo/classServo.html#a613aa8f5aa81971357e6ff36df92309d
+https://madhephaestus.github.io/ESP32Servo/classServo.html#aecebda2e2ee0e43824edec5e7708b566

@@ -37,6 +37,10 @@ void moveSteps(bool dir, int steps, byte ms) {
   }
 }
 
+// Used to drive the stepper motor to rotate clockwise or counter clockwise:
+//  dir indicates direction of rotation.
+//  if dir returns true, motor rotates clockwise.
+//  else rotates counter-clockwise
 void moveOneStep(bool dir) {
   // Four low bits to indicate state of the port:
   static byte out = 0x01;

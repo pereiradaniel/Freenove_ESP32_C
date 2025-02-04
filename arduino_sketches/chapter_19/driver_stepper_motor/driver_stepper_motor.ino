@@ -16,17 +16,21 @@ void loop()
 
     // Phase 1:
     // Rotates a full turn:
+    // Stepper motor needs 32*64 steps for one full rotation!
     moveSteps(true, 32 * 64, 3);
     // Delay 1 second:
     delay(1000);
 
     // Phase 2:
     // Rotates a full turn:
+    // Stepper motor needs 32*64 steps for one full rotation!
     moveSteps(false, 32 * 64, 3);
     // Delay second:
     delay(1000);
 }
 
+// Speed of rotation is determined by ms.
+// The value of ms should be between 3-20. Larger value is slower.
 void moveSteps(bool dir, int steps, byte ms) {
   for (unsigned long i = 0; i < steps; i++) {
     // Rotates one step:

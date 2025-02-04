@@ -1,3 +1,5 @@
+// Project 17.2: DC motor control with L293D.
+
 // Channel 1, L293D:
 int in1Pin = 12;
 // Channel 2, L293D:
@@ -10,6 +12,17 @@ int channel = 0;
 boolean rotationDir;
 // Variable for the motor's rotation speed:
 int rotationSpeed;
+
+/*
+Determining the direction of the motor:
+  The ADC of the ESP32 has a 12-bit accuracy:
+                Range: 0-4095
+      Mid-range point: 2048
+  The mid-range point is what determines which way the motor rotates.
+
+Determining the speed of the motor:
+  Take the absolute value of the result of subtracting 2048 from the ADC value of the potentiometer.
+*/
 
 void driveMotor(boolean dir, int spd) {
   // Controls motor rotation direction:

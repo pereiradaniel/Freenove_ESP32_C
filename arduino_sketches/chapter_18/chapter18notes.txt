@@ -31,4 +31,6 @@ Servo:
         1.5ms                   0 degrees
         2ms                     45 degrees
         2.5ms                   180 degrees
-    
+
+Required Libraries:
+    In order to use the servo, you will need to install the ESP32Servo library!

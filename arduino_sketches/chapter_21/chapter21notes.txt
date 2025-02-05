@@ -53,3 +53,6 @@ HC-SR04 Ultrasonic Ranging Module
         4.  When the module receives the returned ultrasonic waves from encountering an obstacle, the Echo pin will be pulled down.
         5.  The duration of high level in the Echo pin is the total time of the ultrasonic wave from transmitting to receiving, s=vt/2.
     
+# Project 21.2: Ultrasonice Ranging (library)
+
+Uses the UltrasonicSensor.h library.

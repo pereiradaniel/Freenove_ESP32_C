@@ -2,3 +2,21 @@
 
 # Project 20.1: LCD1602
 
+I2C Communication
+-----------------
+    I2C: Inter-Integreated Circuit
+    A two-wire serial communication mode.
+    Can be used for the connection of micro controllers and their peripheral equipment.
+    Devices using I2C communication must be connected to the serial data (SDA) line, and serial clock (SCL) line (called I2C bus).
+    Each device has a unique address and can be used as a transmitter or receiver to communicate with devices connected to the bus.
+
+LCD1602 Communication
+---------------------
+    LCD602 can display 2 lines of characters in 16 columns.
+    It is capable of displaying numbers, letters, symbols, ASCII code, etc.
+
+    Serial-to-parallel IC chip in the LCD1602 module is PCF8574T and its default I2C address is 0x27(0x3F).
+
+    Only 4 pins are required to control the 16 pins of the LCD1602 screen, through the I2C interface.
+
+    

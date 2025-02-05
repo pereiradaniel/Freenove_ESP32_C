@@ -50,7 +50,7 @@ float getSonar() {
     digitalWrite(trigPin, LOW);
 
     // Wait:
-    pingTime = pulseIn(echoPin, HIGH, timeout);
+    pingTime = pulseIn(echoPin, HIGH, timeOut);
 
     // Calculate the distance according to the time:
     distance = (float)pingTime * soundVelocity / 2 / 10000;

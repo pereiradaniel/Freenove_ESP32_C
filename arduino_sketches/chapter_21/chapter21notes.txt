@@ -1,0 +1,55 @@
+# CHAPTER 21: Ultrasonic Ranging
+
+# Project 21.1: Ultrasonic Ranging
+
+HC-SR04 Ultrasonic Ranging Module
+---------------------------------
+    How it works:
+        The ultrasonic rangind module works by sending out an ultrasonic wave, and receiving the reverb when it bounces back.
+    
+        The distance can be measured by counting the timme interval between sending and receiving the ultrasonic waves.
+
+        The time difference is the total time of the ultrasonic wave's journey from transmission to reception.
+
+        The speed of sound through the air is a constant:
+
+            v = 340 ms
+
+        The distance between the ultrasonic ranging module and the obstacle can be calculated thusly:
+
+        Formula:
+
+            s = vt / 2
+
+    HC-SR04:
+        Integrates both an ultrasonic transmitter and receiver.
+        
+        The transmitter:
+            Used to convert electrical signals (electrical energy) into high frequency sound waves (mechanical energy) that are beyond the range of human hearing.
+        
+        The receiver:
+            Does the opposite of the transmitter.
+        
+    Technical specifications:
+        Working voltage:            5V
+        Working current:            12mA
+        Minimum measured distance:  2cm
+        Maximum measured distance:  200cm
+    
+    PINS:
+
+        PIN    |    Description
+        -----------------------------
+        VCC    |    Power supply pin.
+        Trig   |    Trigger pin.
+        Echo   |    Echo pin.
+        GND    |    Ground.
+        -----------------------------
+
+    Intstructions for usage:
+        1.  Output a high-level pulse in trigger pin lasting for at list 10us.
+        2.  The mmodule begins to transmit ultrasonic waves.
+        3.  At the same time, the Echo pin is pulled up.
+        4.  When the module receives the returned ultrasonic waves from encountering an obstacle, the Echo pin will be pulled down.
+        5.  The duration of high level in the Echo pin is the total time of the ultrasonic wave from transmitting to receiving, s=vt/2.
+    

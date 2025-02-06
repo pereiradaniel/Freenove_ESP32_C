@@ -19,3 +19,8 @@
             Send low level to the first 1 column (pin 1), and detect level state of row 5, 6, 7, 8 to judge whether A, B, C, or D is being pressed.
 
             Then send low level to column 2,3,4 in turn to detect whether other keys are pressed.
+
+# Project 22.2: Keypad Door.
+
+Objective:Use a keypad to control the action of a servo motor.
+

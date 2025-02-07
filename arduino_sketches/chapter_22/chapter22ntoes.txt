@@ -23,4 +23,3 @@
 # Project 22.2: Keypad Door.
 
 Objective:Use a keypad to control the action of a servo motor.
-

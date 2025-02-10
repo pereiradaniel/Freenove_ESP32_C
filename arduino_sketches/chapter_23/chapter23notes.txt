@@ -1,3 +1,19 @@
 # Chapter 23: Infrared Remote
 
 # Project 23.1 Infrared Remote control
+
+Infrared Remote
+---------------
+    Device with buttons and infrared emission tube for sending signals to other devices.
+
+Infrared Receiver
+-----------------
+    A component that receives infrared light emitted by the infrared remote.
+
+    Three pins:
+        1.  Data
+        2.  Ground
+        3.  VCC
+
+    How it works:
+        When a button on the remote is pressed, the transmitter sends a signal with the value to a receiver that decodes it.

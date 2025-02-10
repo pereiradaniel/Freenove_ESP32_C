@@ -23,7 +23,3 @@
 # Project 22.2: Keypad Door.
 
 Objective:Use a keypad to control the action of a servo motor.
-
-Codes for LONG and SHORT button presses:
-    - A long press will result in 0xffffffff following the code for the button that was pressed.
-    - A short press will simply display the code for the button.

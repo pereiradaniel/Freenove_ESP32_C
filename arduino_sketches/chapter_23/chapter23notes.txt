@@ -17,3 +17,7 @@ Infrared Receiver
 
     How it works:
         When a button on the remote is pressed, the transmitter sends a signal with the value to a receiver that decodes it.
+
+    Codes for LONG and SHORT button presses:
+        - A long press will result in 0xffffffff following the code for the button that was pressed.
+        - A short press will simply display the code for the button.

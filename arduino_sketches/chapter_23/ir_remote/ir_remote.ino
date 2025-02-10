@@ -27,3 +27,7 @@ void loop() {
       Serial.printf("IR Code:  %#x\r\n", ir_recv.data());
     }
 }
+
+// Codes for LONG and SHORT button presses:
+//      A long press will result in 0xffffffff following the code for the button that was pressed.
+//      A short press will simply display the code for the button.

@@ -1,0 +1,36 @@
+CHAPTER 26: Attitude Sensor MPU 6050
+
+Project 26.1: Read an MPU6050 Sensor Module
+
+MPU6050
+-------
+    Complete 6-axis motion tracking device.
+    
+    Combines:
+        3-axis gyroscope
+        3-axis accelerometer
+        DMP (Digital Motion Proccessor)
+    
+    Settings of the accelerometer and gyroscope can be changed.
+    A precision wide range digital temperature sensor is also integrated to compensate data readings for changes in temperature.
+    Temperature values can also be read.
+
+    I2C: The MPU6050 follows the I2C communication protocol.
+    Default address is 0x68.
+
+    The MPU6050 module is widely used to assist with balancing vehicles, robots, and aircraft, mobile phones, and other products which require stability control or sensing.
+
+    Pins:
+
+        NAME |  No.|DESCRIPTION
+        ------------------------------------------------------------
+        VCC     1   Positive pole of power supply with 3.3V/5.5V
+        GND     2   Negative pole of power supply.
+        SCL     3   I2C communication clock pin.
+        SDA     4   I2C communication clock pin.
+        XDA     5   I2C host data pin, which can be connected to other devices.
+        XCL     6   I2X host clock pin which can be connected to other devices.
+        AD0     7   I2C address bit control pin.
+                    Low  level: Device address is 0x68.
+                    High level: Device address is 0x69.
+        INT     8   Output interrupt pin.

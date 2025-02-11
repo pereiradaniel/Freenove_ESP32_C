@@ -1,0 +1,34 @@
+CHAPTER 24: Hygrothermograph DHT11
+
+Projoect 24.1 Hygrothermograph
+------------------------------
+    What it is:
+        A compound temperature and humidity sensor.
+        The output digital signal has been calibrated by its manufacturer.
+    
+    What it does:
+        Uses a customized, single-ine communication protocol. Through the library, the module's data can be read more conveniently.
+    
+    The DHT11 has Four Pins:
+        1.  VCC
+        2.  SDA
+        3.  NC  !!
+        4.  GND
+
+    How it works:
+        Power up the module.
+        After 1 second, it will initialize.
+        Its operating voltage is between 3.3V and 5.5V.
+
+        SDA Pin:
+            Data pin which is used to communicate with other devices.
+        
+        !! Never connect this pin to any part of the circuit!
+
+        NC Pin (Not Connected Pin):
+            A type of pin found on various integrated circuit packages. May not have have a functional purpose, except during manufacture and test.
+
+    The DHT11 module Will give us data on two things:
+        - Temperature
+        - Humidity
+

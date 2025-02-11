@@ -27,8 +27,8 @@ void loop() {
         goto flag;
 
     // Prints a message to the serial monitor with the temperature and humidity values:
-    Serial.println(" Temperature:" + String(newValues.temperature) + 
-    " Humidity:" + String(newValues.humidity));
+    Serial.println("Temperature: " + String(newValues.temperature) + 
+    "Humidity: " + String(newValues.humidity));
     
     // Delay for 2 seconds before re-reading temperature and humidity again:
     delay(2000);

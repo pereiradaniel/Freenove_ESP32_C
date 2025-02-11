@@ -1,6 +1,37 @@
-CHAPTER 25: Infrred Motion sensor
+CHAPTER 25: Infrared Motion sensor
+---------------------------------
 
 Project 25.1: Infrared Motion Detector with LED Indicator.
 
 Objective: Use an IR sensor to detect heat signatures.
 
+
+Infrared Motion Sensor, HC SR-501.
+
+    Description:
+        Working voltage: 5v-20v(DC)
+        
+        Automatic trigger:
+            When a body is detected in the sensor's detection area, the module will output HIGH level (3.3V).
+            When the body leaves the sensor's active detection area, it will output HIGH level lasting for time period T, then out put low level (0V).
+            Delay time T can be adjusted by the potentiometer R1.
+            The position of the jumper cap can decide between non-repeatable trigger mode or repeatable mode.
+        
+            L: Non-repeatable mode.
+
+                Outputs high level after sensing a body.
+                When delay time is over, outputs low level.
+                During high level time, the sensor no longer actively senses.
+
+            H: Repeatable trigger mode.
+
+                Difference from L mode is that it can sense a body until it leaves the detection area during that period of high level output. After this it starts to time and output low level after delaying T time.
+            
+            Induction block time:
+
+                Induction will stay in block condition, does not induce external signal at lesser time inetervals (less than the delay time) and outputting high level or low level.
+
+            Initialization time:
+
+                Module needs about 1 minute to initialize after being powered ON.
+                During this time period, it will alternately output high or low level.

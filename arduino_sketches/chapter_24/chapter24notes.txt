@@ -32,3 +32,5 @@ Projoect 24.1 Hygrothermograph
         - Temperature
         - Humidity
 
+Poject 24.2: Hygrothermograph + LCD display.
+

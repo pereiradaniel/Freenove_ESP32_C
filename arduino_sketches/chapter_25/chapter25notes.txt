@@ -1,0 +1,6 @@
+CHAPTER 25: Infrred Motion sensor
+
+Project 25.1: Infrared Motion Detector with LED Indicator.
+
+Objective: Use an IR sensor to detect heat signatures.
+

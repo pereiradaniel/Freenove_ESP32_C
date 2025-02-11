@@ -1,4 +1,4 @@
-// Project 23.2: LED controlled by IR remote.
+// Project 23.1: LED controlled by IR remote.
 // Objective: Control an LED using the IR remote. The LED should be capable of three brightness settings, of of being turned either off or on.
 
 #include "Freenove_IR_Lib_for_ESP32.h"

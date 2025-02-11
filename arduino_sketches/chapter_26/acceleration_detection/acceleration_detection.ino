@@ -19,6 +19,7 @@ int16_t gx,gy,gz;
 long timer = 0;
 
 void setup() {
+    // Initialize serial connection with ESP32 via USB:
     Serial.begin(115200);
     
     // Attach I2C pin:

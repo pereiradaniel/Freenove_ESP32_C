@@ -20,5 +20,5 @@ void loop() {
     digitalWrite(ledPin, digitalRead(sensorPin));
     
     // Interval between IR sensor readings:
-    delay(1000);
+    delay(500);
 }

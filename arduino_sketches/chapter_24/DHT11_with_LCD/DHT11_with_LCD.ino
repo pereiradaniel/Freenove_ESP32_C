@@ -2,13 +2,15 @@
 // Objective: Read temperature and humidity from the DHT11 module and display the results on the LCD display.
 
 // Import libraries:
+//      DHTesp
+//      LiquidCrystal_I2C
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include "DHTesp.h"
 
-// Define the GPIO in connections with the DHT11:
-#define SDA 13
-#define SCL 14
+// Define the GPIO in connections with the LCD1602 (I2C Bus):
+#define SDA 13  // Serial data line
+#define SCL 14  // Serial clock line
 
 // Create class object for the DHT11:
 DHTesp dht;

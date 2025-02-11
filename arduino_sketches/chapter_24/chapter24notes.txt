@@ -34,3 +34,4 @@ Projoect 24.1 Hygrothermograph
 
 Poject 24.2: Hygrothermograph + LCD display.
 
+Objective: Display the temperature and humidity on the LCD display after reading data from the DHT11 module.

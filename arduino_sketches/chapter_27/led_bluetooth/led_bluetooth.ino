@@ -9,6 +9,7 @@
 // Instantiate BluetoothSerial object to work with:
 BluetoothSerial SerialBT;
 
+// An array of chars to act as a string:
 char buffer[20];
 
 static int count = 0;
@@ -36,6 +37,10 @@ void loop() {
     if(count>0){
         Serial.print(buffer);
         
+        // strncmp(str1, str2, num)
+        //      str1, str2: strings to be compared
+        //      num: largest string size
+        
         if(strncmp(buffer,"led_on",6)==0)
             digitalWrite(LED,HIGH);
 
@@ -45,6 +50,7 @@ void loop() {
         // Reset counter:
         count=0;
 
+        // memset() is usde to clean and initialize the memory of an array, in this case 'buffer':
         memset(buffer,0,20);
     }
 }

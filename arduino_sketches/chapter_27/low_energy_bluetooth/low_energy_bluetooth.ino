@@ -9,11 +9,17 @@
 #include "BLEServer.h"
 #include "BLEUtils.h"
 #include "BLE2902.h"
- 
+
+// Instantiate a BLECharacteristic: 
 BLECharacteristic *pCharacteristic;
+
+// Boolean that informs the program whether a device is connected: 
 bool deviceConnected = false;
-uint8_t txValue = 0;
+ 
+// Tracks time since last message received:
 long lastMsg = 0;
+
+// Initializes message rx buffer with text:
 String rxload="Test\n";
  
 #define SERVICE_UUID           "6E400001-B5A3-F393-E0A9-E50E24DCCA9E" 
@@ -74,29 +80,39 @@ void setupBLE(String BLEName){
     // 6. Start the advertising:
     pServer->getAdvertising()->start();
     
-    Serial.println("Waiting a client connection to notify...");
+    // Prints a waiting message to the serial monitor:
+    Serial.println("Waiting for a client connection to notify...");
 }
 
 void setup() {
     // Initialize a serial connection with the ESP32 over usb:
     Serial.begin(115200);
-  
-    setupBLE("ESP32_Bluetooth");
+
+    // Start BLE and give it a name:
+    setupBLE("Daniel's ESP32 Bluetooth");
 }
  
 void loop() {
-  long now = millis();
-  if (now - lastMsg > 100) {
-    if (deviceConnected&&rxload.length()>0) {
-        Serial.println(rxload);
-        rxload="";
+    long now = millis();
+    if (now - lastMsg > 100) {
+        // Check if there is a message from the BT device and print:
+        if (deviceConnected&&rxload.length()>0) {
+            Serial.println(rxload);
+            
+            // Reset the message rx buffer:
+            rxload="";
+        }
+
+        if(Serial.available()>0){
+            String str=Serial.readString();
+            
+            const char *newValue=str.c_str();
+            
+            pCharacteristic->setValue(newValue);
+            
+            pCharacteristic->notify();
+        }
+        // Reset the timer since the last message to right now:
+        lastMsg = now;
     }
-    if(Serial.available()>0){
-        String str=Serial.readString();
-        const char *newValue=str.c_str();
-        pCharacteristic->setValue(newValue);
-        pCharacteristic->notify();
-    }
-    lastMsg = now;
-  }
 }

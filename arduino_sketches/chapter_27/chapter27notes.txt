@@ -43,4 +43,10 @@ Component Knowledge
     
     When mobile phones exchange data with the ESP32, they are usually in master mode, while the ESP32 is usually in slave mode.
 
-    
+
+Bluetooth Serial Library
+------------------------
+
+    BlueetoothSerial object and documentation used in this project:
+
+    https://github.com/espressif/arduino-esp32/tree/master/libraries/BluetoothSerial

@@ -14,6 +14,7 @@ void setup() {
     Serial.begin(115200);
   
     // Initialize the BluetoothSerial device with a name:
+    // .begin(localName, isMaster);
     SerialBT.begin("Daniel's ESP32-WROVER"); //Bluetooth device name
   
     Serial.println("\nDevice started, and ready to pair with Bluetooth.");
@@ -21,8 +22,13 @@ void setup() {
 
 void loop() {
     // Check if Serial has a message, and then write it to the Bluetooth device:
+    // .available();
+    //      Acquire digits sent from the buffer, or return 0.
     if (Serial.available())
         SerialBT.write(Serial.read());
+
+    // .write(str) : Send a String to Bluetooth. 
+    // .read() : read data from Bluetooth. Data type of return value is int.
 
     // Check if Bluetooth has a message, and then write it to the serial monitor:
     if (SerialBT.available())

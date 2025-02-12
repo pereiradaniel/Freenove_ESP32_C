@@ -1,4 +1,4 @@
-// Project 17.2: Low Energy Bluetooth
+// Project 27.2: Low Energy Bluetooth
 
 // Objective:
 //      Establish a serial connection with the ESP32 over USB.

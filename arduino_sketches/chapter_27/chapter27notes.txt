@@ -1,11 +1,9 @@
 CHAPTER 27: Bluetooth
-=====================
 
 Objective: Introduce how to perform a simple data transmission through the Bluetooth capability of the ESP32-WROVER and a mobile phone.
 
 
 Project 27.1: Bluetooth Passthrough
------------------------------------
 
     This prjoect requires the use of a Bluetooth APP called Serial Bluetooth Terminal:
 
@@ -13,7 +11,6 @@ Project 27.1: Bluetooth Passthrough
 
 
 Component Knowledge
-~~~~~~~~~~~~~~~~~~~
 
     What is Bluetooth?
 
@@ -45,8 +42,12 @@ Component Knowledge
 
 
 Bluetooth Serial Library
-------------------------
 
     BlueetoothSerial object and documentation used in this project:
 
     https://github.com/espressif/arduino-esp32/tree/master/libraries/BluetoothSerial
+
+
+Project 27.2: Low Energy Bluetooth
+
+    Similar to previous project.

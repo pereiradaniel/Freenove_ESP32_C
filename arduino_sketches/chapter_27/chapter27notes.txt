@@ -1,0 +1,3 @@
+CHAPTER 27: Bluetooth
+
+Objective: Introduce how to perform a simple data transmission through the Bluetooth capability of the ESP32-WROVER and a mobile phone.

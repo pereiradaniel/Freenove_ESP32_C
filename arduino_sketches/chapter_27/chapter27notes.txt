@@ -1,3 +1,10 @@
 CHAPTER 27: Bluetooth
 
 Objective: Introduce how to perform a simple data transmission through the Bluetooth capability of the ESP32-WROVER and a mobile phone.
+
+
+Project 27.1: Bluetooth Passthrough
+
+This prjoect requires the use of a Bluetooth APP called Serial Bluetooth Terminal
+https://www.appsapk.com/serial-bluetooth-terminal/
+

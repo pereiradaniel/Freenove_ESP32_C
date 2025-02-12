@@ -1,10 +1,46 @@
 CHAPTER 27: Bluetooth
+=====================
 
 Objective: Introduce how to perform a simple data transmission through the Bluetooth capability of the ESP32-WROVER and a mobile phone.
 
 
 Project 27.1: Bluetooth Passthrough
+-----------------------------------
 
-This prjoect requires the use of a Bluetooth APP called Serial Bluetooth Terminal
-https://www.appsapk.com/serial-bluetooth-terminal/
+    This prjoect requires the use of a Bluetooth APP called Serial Bluetooth Terminal:
 
+        https://www.appsapk.com/serial-bluetooth-terminal/
+
+
+Component Knowledge
+~~~~~~~~~~~~~~~~~~~
+
+    What is Bluetooth?
+
+    A short-distance communication system.
+    
+    Can be divided into two types:
+
+        1. Bluetooth Low Energy (BLE).
+        2. Classic Bluetooth.
+    
+    There are two models for simple data transmission:
+
+        1. Master Mode
+
+            - Work is done in the master device, which can search and select slave devices nearby to connect with.
+
+            - When a device initiates a connection request in master mode, it requires information from the other Bluetooth devices including their addresses and paring passkeys.
+
+            - After finishing pairing, it can connect with them directly.
+        
+        2. Slave Mode
+
+            - A Bluetooth module running in slave mode can only accept connection requests from a host computer. It cannot initiate a connection request.
+
+            - After connecting with the host device, it can send data to or receive from the host device.
+
+    
+    When mobile phones exchange data with the ESP32, they are usually in master mode, while the ESP32 is usually in slave mode.
+
+    

@@ -1,0 +1,5 @@
+CHAPTER 30: Read and Write to an SD Card
+
+This project requires an ESP32 with an SD card slot.
+
+To be completed after checking my stock of ESP32s for one with an SD card slot!

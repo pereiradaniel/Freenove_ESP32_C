@@ -1,0 +1,8 @@
+CHAPTER 28: Bluetooth Media by DAC
+
+ESP32 integrates Classic Bluetooth and Low Energy Bluetooth (BLE).
+
+It can transmit not just simple data, but also files such as text and audio.
+
+Project 28.1: Playing Bluetooth Music through DAC.
+

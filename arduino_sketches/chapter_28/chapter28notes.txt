@@ -6,3 +6,15 @@ It can transmit not just simple data, but also files such as text and audio.
 
 Project 28.1: Playing Bluetooth Music through DAC.
 
+Objective: Use the Bluetooth audio receiving function of the ESP3 to transcode the audio data from a mobile phone, and play the musci through the DAC output pin.
+
+8 bit accuracy:
+    The accuracy of ESP32's DAC is only eight bits, so the adio will be distorted to some extent.
+
+Signal Conversion
+
+    Bluetooth devices receive music data from mobile devices which cannot be played through earphones or speakers directly.
+
+    To output a DAC signal, Bluetooth devices have to decode the data with an I2S decoding chip.
+
+    The power of these audio signals is so small that only low-power devices can be driven, such as an earphone. The DAC signal must be powered by an amplifier chip in order to be played from devices that require more power.

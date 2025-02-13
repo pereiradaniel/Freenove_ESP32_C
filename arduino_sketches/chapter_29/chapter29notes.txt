@@ -1,0 +1,3 @@
+CHAPTER 29: Bluetooth Media by Audio Module
+
+Project 29.1: Playing Bluetooth Music through Audi Converter and Amplifier

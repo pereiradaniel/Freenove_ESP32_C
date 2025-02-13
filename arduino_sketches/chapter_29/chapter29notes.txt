@@ -1,3 +1,6 @@
 CHAPTER 29: Bluetooth Media by Audio Module
 
-Project 29.1: Playing Bluetooth Music through Audi Converter and Amplifier
+Project 29.1: Playing Bluetooth Music through Audio Converter and Amplifier
+
+This project will use an Audio Converter and Amplifier that will play audio at a higher quality.
+

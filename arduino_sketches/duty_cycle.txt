@@ -1,3 +1,6 @@
+sources:
+https://citizenside.com/technology/what-is-duty-cycle-in-electronics/
+
 Basic information on Duty Cycle
 
 What is it?

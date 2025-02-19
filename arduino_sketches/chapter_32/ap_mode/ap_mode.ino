@@ -2,12 +2,20 @@
 
 #include <WiFi.h>
 
+// Name of WiFi hotspot:
 const char *ssid_AP     = "";
+
+// Password for WiFi hotspot:
 const char *password_AP = "";
 
-IPAddress local_IP(192,168,1,100);  // Set the IP address of ESP32 itself
-IPAddress gateway(192,168,1,10);    // Set the gateway of ESP32 itself
-IPAddress subnet(255,255,255,0);    // Set the subnet mask for ESP32 itself
+// Set the IP address of ESP32 itself:
+IPAddress local_IP(192,168,1,100);
+
+// Set the gateway of ESP32 itself:
+IPAddress gateway(192,168,1,10);
+
+// Set the subnet mask for ESP32 itself:
+IPAddress subnet(255,255,255,0);
 
 void setup(){
     Serial.begin(115200);

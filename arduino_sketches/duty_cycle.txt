@@ -1,0 +1,38 @@
+Basic information on Duty Cycle
+
+What is it?
+- A commonly used term in the field of electronics.
+
+What does it mean?
+- Describes the proportion of time that a signal is active, or in the “on” state, compared to the total time of a complete signal cycle.
+- It is expressed as a percentage between 0 and 100%.
+
+Why is it important?
+- Directly impacts the functioning and performance of various devices and systems.
+
+Description:
+The duty cycle represents the ratio of the signal’s active period to its total period.
+When a signal is active, it is supplying power or transmitting data.
+During the inactive period, the signal is off or not transmitting any information.
+Applies to both analog and digital signals.
+
+Where is it important?
+Applications where signals are periodically generated:
+- PWM
+- Oscillators (active buzzer)
+
+In PWM, the duty cycle determines the width of the pulse, which affects the average power or intensity of the signal. In oscillators, the duty cycle influences the frequency and period of the waveform generated.
+
+Power consumption:
+The duty cycle is integral to controlling the average power consumption of an electronic device. By adjusting the duty cycle, it is possible to regulate power delivery and optimize energy efficiency. Especially relevant in battery-powered devices.
+
+How to calculate the duty cycle:
+- Determine the duration of:
+1. The active period
+2. The total signal period.
+
+Formula:
+
+	Duty Cycle (%) = (Active Period / Total Period) * 100%
+
+A higher duty cycle means the signal is active for a longer duration, a lower duty cycle means a shorter active period.

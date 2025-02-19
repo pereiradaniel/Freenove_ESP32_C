@@ -4,14 +4,14 @@
 #include <WiFi.h>
 
 // WiFi Router and password variables:  
-const char *ssid_Router     = "********"; //Enter the router name
-const char *password_Router = "********"; //Enter the router password
+const char *ssid_Router     = ""; //Enter the router name
+const char *password_Router = ""; //Enter the router password
 
 void setup(){
     // Initialize serial connection with ESP32 via USB:
     Serial.begin(115200);
 
-    / /Add some delay:
+    //Add some delay:
     delay(2000);
 
     // Print a message to the console notifying 

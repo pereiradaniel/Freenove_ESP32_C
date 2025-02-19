@@ -18,25 +18,36 @@ IPAddress gateway(192,168,1,10);
 IPAddress subnet(255,255,255,0);
 
 void setup(){
-    Serial.begin(115200);
-    delay(2000);
+  // Initialize serial connection between ESP32 via USB:
+  Serial.begin(115200);
+  
+  // Add some delay:
+  delay(2000);
 
-    Serial.println("Setting soft-AP configuration ... ");
-    WiFi.disconnect();
-    WiFi.mode(WIFI_AP);
-    Serial.println(WiFi.softAPConfig(local_IP, gateway, subnet) ? "Ready" : "Failed!");
-    Serial.println("Setting soft-AP ... ");
-    boolean result = WiFi.softAP(ssid_AP, password_AP);
-    
-    if (result) {
-        Serial.println("Ready");
-        Serial.println(String("Soft-AP IP address = ") + WiFi.softAPIP().toString());
-        Serial.println(String("MAC address = ") + WiFi.softAPmacAddress().c_str());
-    } else {  
-    Serial.println("Failed!");
-  }
+  // Prints message to serial monitor notifying that set up is beginning:
+  Serial.println("Initializing soft-AP configuration...");
+  
+  // Disconnect any existing WiFi first:
+  WiFi.disconnect();
+  
+  // Sets WiFi mode:
+  WiFi.mode(WIFI_AP);
+  
+  // Print a message to the serial monitor with WiFi connection settings and print ready message ELSE notify of failure:
+  Serial.println(WiFi.softAPConfig(local_IP, gateway, subnet) ? "Ready" : "Failed!");
 
-  Serial.println("Setup End");
+  Serial.println("Setting soft-AP ... ");
+  boolean result = WiFi.softAP(ssid_AP, password_AP);
+  
+  if (result) {
+    Serial.println("Ready");
+    Serial.println(String("Soft-AP IP address = ") + WiFi.softAPIP().toString());
+    Serial.println(String("MAC address = ") + WiFi.softAPmacAddress().c_str());
+  } else {  
+  Serial.println("Failed!");
+}
+
+Serial.println("Setup End");
 }
  
 void loop() {

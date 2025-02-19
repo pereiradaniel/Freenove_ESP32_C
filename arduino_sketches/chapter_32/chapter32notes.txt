@@ -14,6 +14,9 @@ Project 32.1: Station mode.
         WiFi.h:
         https://docs.espressif.com/projects/arduino-esp32/en/latest/api/wifi.html
 
+        https://docs.arduino.cc/libraries/wifi/
+
+
     When the ESP32 runs in Station mode, it acts as a WiFi client.
     It can connect to the router network, and communicate with other devices on the router.
 
@@ -47,7 +50,7 @@ Project 32.2: AP mode.
 
 AP mode
 
-    
+    When the ESP32 selects AP mode, it creates a hotspot network that is separate from the Internet and waits for other devices to connect.
 
 WiFi API
     The wi-fi API provides support for the 802.11b/g/n protocol driver.
@@ -66,7 +69,10 @@ WiFi API
 
         - Scanning for access points.
     
-    Working as AP
+    Working as AP (Access Point)
 
         ESP32 is configured as an Access Point (AP).
         It is capable of receiving incoming connections from other devices (called "stations") by providing a Wi-Fi network.
+
+        This mode can be used for serving an HTTP or HTTPS server inside the ESP32.
+    

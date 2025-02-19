@@ -1,11 +1,10 @@
 // Project 32.2: ESP32 as an Accesss Point (AP)
 
+// This project requires the WiFi library header file for the ESP32:
 #include <WiFi.h>
 
-// Name of WiFi hotspot:
-const char *ssid_AP     = "";
-
-// Password for WiFi hotspot:
+// Name of WiFi hotspot and password:
+const char *ssid_AP = "";
 const char *password_AP = "";
 
 // Set the IP address of ESP32 itself:

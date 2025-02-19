@@ -7,13 +7,13 @@
 const char *ssid_AP = "";
 const char *password_AP = "";
 
-// Set the IP address of ESP32 itself:
+// Sets the IP address of ESP32:
 IPAddress local_IP(192,168,1,100);
 
-// Set the gateway of ESP32 itself:
+// Sets the gateway of ESP32:
 IPAddress gateway(192,168,1,10);
 
-// Set the subnet mask for ESP32 itself:
+// Sets the subnet mask for ESP32:
 IPAddress subnet(255,255,255,0);
 
 void setup(){
@@ -29,10 +29,10 @@ void setup(){
   // Disconnect any existing WiFi first:
   WiFi.disconnect();
   
-  // Sets WiFi mode:
+  // Puts ESP32 into AP (Access Point) WiFi mode:
   WiFi.mode(WIFI_AP);
   
-  // Print a message to the serial monitor with WiFi connection settings and print ready message ELSE notify of failure:
+  // Configures IP address, gateway, and subnet mask for the ESP32, and prints either success or failure message to the serial monitor:
   Serial.println(WiFi.softAPConfig(local_IP, gateway, subnet) ? "Ready" : "Failed!");
 
   // Print message to serial monitor notifying that AP set up is beginning:

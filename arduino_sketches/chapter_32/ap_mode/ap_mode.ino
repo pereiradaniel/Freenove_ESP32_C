@@ -1,4 +1,4 @@
-// Project 32.2
+// Project 32.2: ESP32 as an Accesss Point (AP)
 
 #include <WiFi.h>
 
@@ -36,7 +36,10 @@ void setup(){
   // Print a message to the serial monitor with WiFi connection settings and print ready message ELSE notify of failure:
   Serial.println(WiFi.softAPConfig(local_IP, gateway, subnet) ? "Ready" : "Failed!");
 
-  Serial.println("Setting soft-AP ... ");
+  // Print message to serial monitor notifying that AP set up is beginning:
+  Serial.println("Setting soft-AP...");
+
+
   boolean result = WiFi.softAP(ssid_AP, password_AP);
   
   if (result) {

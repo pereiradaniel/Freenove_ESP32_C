@@ -44,11 +44,11 @@ void setup(){
   boolean result = WiFi.softAP(ssid_AP, password_AP);
   
   if (result) {
-    Serial.println("Success! Access Point is ready.");
+    Serial.println("Success! ESP32 Access Point available.");
     Serial.println(String("IP address = ") + WiFi.softAPIP().toString());
     Serial.println(String("MAC address = ") + WiFi.softAPmacAddress().c_str());
   } else {  
-  Serial.println("Failed! Access Point is not available.");
+  Serial.println("Failed! ESP32 Access Point is not available.");
   }
 
   Serial.println("Finished.");

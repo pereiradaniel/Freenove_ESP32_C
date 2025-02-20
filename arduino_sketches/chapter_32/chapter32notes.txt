@@ -85,3 +85,7 @@ WiFi API
     WiFiAP
 
         Used to configure and manage the Wi-Fi as an Access Point.
+
+Project 32.3: AP + Station Mode
+
+    It is possible for the ESP32 to use both AP and Station Mode at the same time, and create a hotspot network.

@@ -69,10 +69,19 @@ WiFi API
 
         - Scanning for access points.
     
-    Working as AP (Access Point)
+    Working as AP (WiFi Access Point)
 
         ESP32 is configured as an Access Point (AP).
         It is capable of receiving incoming connections from other devices (called "stations") by providing a Wi-Fi network.
 
         This mode can be used for serving an HTTP or HTTPS server inside the ESP32.
     
+    Working as an STA (WiFi Station)
+
+        STA mode is used to connect the ESP32 to a Wi-Fi network that is provided by an Access Point.
+    
+        This is the mode required if you want your project connected to the internet.
+    
+    WiFiAP
+
+        Used to configure and manage the Wi-Fi as an Access Point.

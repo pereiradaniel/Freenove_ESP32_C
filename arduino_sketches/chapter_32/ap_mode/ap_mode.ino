@@ -4,8 +4,8 @@
 #include <WiFi.h>
 
 // Name of WiFi hotspot and password:
-const char *ssid_AP = "";
-const char *password_AP = "";
+const char *ssid_AP = "esp32wifiap";
+const char *password_AP = "esp32wifiap";
 
 // Sets the IP address of ESP32:
 IPAddress local_IP(192,168,1,100);
@@ -24,7 +24,7 @@ void setup(){
   delay(2000);
 
   // Prints message to serial monitor notifying that set up is beginning:
-  Serial.println("Initializing soft-AP configuration...");
+  Serial.println("Initializing WiFi configuration...");
   
   // Disconnect any existing WiFi first:
   WiFi.disconnect();
@@ -36,20 +36,20 @@ void setup(){
   Serial.println(WiFi.softAPConfig(local_IP, gateway, subnet) ? "Ready" : "Failed!");
 
   // Print message to serial monitor notifying that AP set up is beginning:
-  Serial.println("Setting soft-AP...");
+  Serial.println("Beginning softAP set-up...");
 
-
+  // Start the Wi-Fi as an Access Point:
   boolean result = WiFi.softAP(ssid_AP, password_AP);
   
   if (result) {
-    Serial.println("Ready");
-    Serial.println(String("Soft-AP IP address = ") + WiFi.softAPIP().toString());
+    Serial.println("Success! Access Point is ready.");
+    Serial.println(String("IP address = ") + WiFi.softAPIP().toString());
     Serial.println(String("MAC address = ") + WiFi.softAPmacAddress().c_str());
   } else {  
-  Serial.println("Failed!");
-}
+  Serial.println("Failed! Access Point is not available.");
+  }
 
-Serial.println("Setup End");
+  Serial.println("Finished.");
 }
  
 void loop() {

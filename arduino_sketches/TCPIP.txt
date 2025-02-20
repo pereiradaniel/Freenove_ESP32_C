@@ -1,0 +1,63 @@
+TCP: Transmission Control Protocol
+
+    What it is:
+
+    - A communications standard that enables application programs and computing devices to exchange messages over a network.
+
+    
+    How it works:
+
+    - It is designed to send packets across the internet and ensure the successful delivery of data and messages over networks.
+
+
+    Why it is important:
+
+    - TCP is one of the basic standards that defin the rules of the internet.
+
+    - It is included within the standards defined by the IETF.
+
+    - One of the most commonly used protocols within digital network communications.
+
+    - Ensures end-to-end delivery.
+
+
+IP: Internet Protocol
+
+    What it is:
+
+    - The method for sending data from one device to another across the internet.
+
+    
+    What it does:
+
+    - Every device has an IP address that uniquely identifies it and enables it to communicate with and exchange data with other devices connected to the internet.
+
+    
+    Why it is important:
+    
+    - The statndard for fast and secure communication directly between mobile devices.
+
+    - Responsible for defining how applications and devices exchange packets of data with each other.
+
+
+    How it works:
+
+    - The principal communications protocol responsible for the formats and rules for exchanging data and messages between computers on a single network or several internet-connected networks, done through TCP/IP.
+
+    - IP is the main protocol within the internet layer of the TCP/IP.
+
+        Internet Protocol Suite TCP/IP:
+
+        - A group of communcations protocols that are split into four abstraction layers.
+
+
+    How TCP/IP Works:
+
+    IP obtains and defines the IP address of the application or device that the data must be sent to.
+
+    TCP is responsible for transporting and routing data through the network architecture and ensuring it gets delivered to the destination application or device that IP has defined.
+
+
+References:
+
+    https://www.fortinet.com/resources/cyberglossary/tcp-ip

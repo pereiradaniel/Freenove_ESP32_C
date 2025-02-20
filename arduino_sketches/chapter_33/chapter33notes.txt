@@ -1,4 +1,19 @@
 Chapter 33: TCP/IP
 
+Project 33.1: ESP32 as client.
+
 TCP Connection
 
+    A TCP connection will need to be established before data can be transmitted.
+
+    The client sends a connection request to the server. Each time request is proposed, a, "three-times handshake" is required.
+
+        First handshake:
+            Client sends a connection request to the server and waits for the server to confirm.
+        
+        Second handshake:
+            Ther server sends a response back to the client, informing that it has received the connection request.
+        
+        Third handshake:
+            Client sends a confirmation message to the server again to confirm the connection.
+    

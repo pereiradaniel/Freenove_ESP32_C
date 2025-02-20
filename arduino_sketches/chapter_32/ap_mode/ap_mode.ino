@@ -1,9 +1,11 @@
 // Project 32.2: ESP32 as an Accesss Point (AP)
 
+// Objective: Puts the ESP32 into WiFi Access Point mode, and setting up an access point that you can connect to.
+
 // This project requires the WiFi library header file for the ESP32:
 #include <WiFi.h>
 
-// Name of WiFi hotspot and password:
+// Name of WiFi hotspot and password that will be created with the ESP32:
 const char *ssid_AP = "esp32wifiap";
 const char *password_AP = "esp32wifiap";
 

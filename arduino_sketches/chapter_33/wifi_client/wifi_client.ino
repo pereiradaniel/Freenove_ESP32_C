@@ -1,4 +1,4 @@
-// Project 33.1: WiFi Client.
+// Project 33.1: ESP32 as WiFi Client.
 
 #include <WiFi.h>
 

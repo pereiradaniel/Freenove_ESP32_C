@@ -16,4 +16,16 @@ TCP Connection
         
         Third handshake:
             Client sends a confirmation message to the server again to confirm the connection.
+
+Brief description of TCP and some basics:
+    
+    TCP is a connection-oriented, low-level transmission control protocol.
+    
+    Establishing a connection
+    
+        After TCP establishes a connection, the client and server can send and receive messages to each other.
+
+        The connection will always exist, so long as either the client or server do not initiate a disconnection.
+
+        Each time one party sends a message, the receiver sends and acknowledgement.
     

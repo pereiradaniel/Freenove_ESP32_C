@@ -66,3 +66,10 @@ https://docs.arduino.cc/libraries/wifi/#Client%20class
     
     readString():
         Reads the string in the receive buffer.
+
+
+Project 33.2: ESP32 as Server
+
+    In this project, the ESP32 is used as a server and waits for a connection, and communicates with the client on the same LAN.
+
+    

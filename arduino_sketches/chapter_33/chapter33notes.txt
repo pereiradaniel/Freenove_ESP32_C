@@ -28,4 +28,41 @@ Brief description of TCP and some basics:
         The connection will always exist, so long as either the client or server do not initiate a disconnection.
 
         Each time one party sends a message, the receiver sends and acknowledgement.
+
+
+Important functons from Wifi.h (Client Class):
+
+https://docs.arduino.cc/libraries/wifi/#Client%20class
+
+    connect(ip, port, timeout)/connect(*host, post, timeout):
+        Connect to the IP address and port specified in the constructor.
+        The return value indicates success or failure.
+
+        connect() also supports DNS lookups when using a domain name.
+
+        ip:, *host: ip address of target server
+        port:       port number of target server
+        timeout:    connection timeout
     
+    connected():
+        Judges whether the client is connection.
+        
+        A client is considered connected if the connection has been closed but there is still unread data.
+
+        If return value is 1, connection is successful.
+        If return value is 0, connection is a failure.
+    
+    stop():
+        Stops the TCP connection by disconnecting from the server.
+    
+    print():
+        Sends data to the server connection to the client.
+    
+    available():
+        Returns the number of bytes for reading (the amount of data that has been written to the client by the server it is connected to).
+    
+    read():
+        Read the next byte received from the server the client is connected to (after the last call to read()).
+    
+    readString():
+        Reads the string in the receive buffer.

@@ -75,16 +75,16 @@ Project 33.2: ESP32 as Server
     
     Server Class Functions Used In This Project
 
-    WiFiServer(uint16_t, port=80, uint8_t max_clients=4):
-        port:
-        max_clients:
+    WiFiServer(uint16_t, port=80, uint8_t max_clients=4): Creates a server that listens for incoming connections on the specified port.
+        port: The server port, a range from 0 to 65535 with a default of 80.
+        max_clients: The maximum number of clients with a default number as 4.
     
-    begin(port):
-        port:
+    server.begin(port): Tells the server to begin listening for incoming connections.
+        port: The server port, a range from 0 to 65535 with a default of 80.
     
-    setNoDelay)bool nodelay):
-        nodelay:
+    setNoDelay(bool nodelay): Allows you to disable the Nagle algorithm, which can be useful for reducing latency in TCP connections by sending smaller packets immediately without waiting for more data to accumulate.
+        nodelay: True will disable the Nagle algorithm.
     
-    close():
+    close(): Closes the TCP connection.
 
-    stop():
+    stop(): Stops the TCP connection.

@@ -73,3 +73,18 @@ Project 33.2: ESP32 as Server
     In this project, the ESP32 is used as a server and waits for a connection, and communicates with the client on the same LAN.
 
     
+    Server Class Functions Used In This Project
+
+    WiFiServer(uint16_t, port=80, uint8_t max_clients=4):
+        port:
+        max_clients:
+    
+    begin(port):
+        port:
+    
+    setNoDelay)bool nodelay):
+        nodelay:
+    
+    close():
+
+    stop():
